@@ -1,0 +1,23 @@
+class config(object):
+    save_interval=2
+    batch_size=2
+    lrD=0.00004
+    lrG=0.00002
+    img_size=256
+    pretrain_epoch=10
+    train_epoch=100
+    g_adv_weight= 300.
+    d_adv_weight= 300.
+    con_weight= 1.5
+    sty_weight= 2.5
+    color_weight= 10.
+    tv_weight= 1.
+    beta1=0.5
+    beta2=0.999
+    model_path='models'
+    cartoon_root='shinkai/shinkai'
+    photo_root='shinkai/scenery_photo'
+    test_root='test'
+    is_smooth=True
+    generator_model='models/v2_pretrain_epoch10.pth'
+    discriminator_model=None
