@@ -212,9 +212,9 @@ class trainer(object):
             if (epoch % self.save_interval == 0) or (epoch == self.train_epoch):
                 print('saving checkpoint')
                 torch.save(self.generator.state_dict(),
-                           os.path.join(self.model_path,'v2'+'gen_'+'epoch'+str(epoch)+'.pth'))
+                           os.path.join(self.model_path,'v2'+'gen_'+'epoch'+str(epoch)+'.pt'))
                 torch.save(self.discriminator.state_dict(),
-                           os.path.join(self.model_path, 'v2'+'dis_' + 'epoch' + str(epoch) + '.pth'))
+                           os.path.join(self.model_path, 'v2'+'dis_' + 'epoch' + str(epoch) + '.pt'))
                 #with SummaryWriter(log_dir='logs',comment='eval') as W:
                 with torch.no_grad():
                     self.generator.eval()
