@@ -5,8 +5,10 @@ Pytorch implementation of CartoonGAN [1](CVPR 2018) and further imporve this alg
  
 
 ## Usage
-### 1.Download VGG19
+### 1.Download VGG19 and prepare for the dataset
 [VGG19](https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+
+for the dataset, you need the unpaired cartoon images and the real photos. 
 ### 2.Train cartoonGan version
 ```
 python cartoongan.py
@@ -34,6 +36,19 @@ here is the vedio demo:
 
 There is three Scenes in total. The original video,  Shinkai, Hayao style appear one after another.
 
+you can watch the full vedio at the following http links:
+<table align='center'>
+<tr align='center'>
+<td> Input - Result (this repo) </td>
+<td> Author's pre-trained model (Hayao) </td>
+<td> Author's pre-trained model (Hosoda) </td>
+</tr>
+<tr>
+<td><a href="https://disk.pku.edu.cn:443/link/8AB1CBDD05EE1F1266DD72D335E6CB1A">原视频 Origin vedio</a>
+<td><a href="https://disk.pku.edu.cn:443/link/3F308FB375E7A30A6A3CDAE996FC1E29">宫崎骏风格 Hayao</a>
+<td><a href="https://disk.pku.edu.cn:443/link/BD922C3ED46AAFAEAAEC53552A74B806">新海诚风格 Shinkai</a>
+</tr>
+</table> -->
 
 <!-- ### Cartoonization
 * I got the author's results from [CaroonGAN-Test-Pytorch-Torch](https://github.com/Yijunmaverick/CartoonGAN-Test-Pytorch-Torch).
