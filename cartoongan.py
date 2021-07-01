@@ -20,9 +20,8 @@ device=torch.device('cuda')
 class trainer(object):
     def __init__(self,config):
         self.batch_size=config.batch_size
-        self.cartoon_path = os.path.join(config.cartoon_root, config.style)
-        self.smooth_path = os.path.join(config.cartoon_root, config.style + '_smooth')
-        self.style=config.style
+        self.cartoon_path = config.cartoon_root
+        self.smooth_path = config.cartoon_root+'_smooth'
         self.photo_path=config.photo_root
         self.test_path=config.test_root
         self.model_path=config.model_path

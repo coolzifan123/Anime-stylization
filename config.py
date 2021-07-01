@@ -13,11 +13,10 @@ class config(object):
     beta1=0.5
     beta2=0.999
     model_path='models'
-    cartoon_root='dataset/scenery_cartoon'
-    photo_root='dataset/scenery_photo'
+    cartoon_root='shinkai/shinkai'
+    photo_root='shinkai/scenery_photo'
     test_root='test'
-    style='hayao'
-    is_smooth=True
+    is_smooth=False
     generator_model='models/pretrain_epoch20.pth'
     discriminator_model=None
 
