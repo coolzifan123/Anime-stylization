@@ -16,7 +16,7 @@ class config(object):
     cartoon_root='shinkai/shinkai'
     photo_root='shinkai/scenery_photo'
     test_root='test'
-    is_smooth=False
+    is_smooth=True
     generator_model='models/pretrain_epoch20.pth'
     discriminator_model=None
 

@@ -18,6 +18,6 @@ class config(object):
     cartoon_root='shinkai/shinkai'
     photo_root='shinkai/scenery_photo'
     test_root='test'
-    is_smooth=False
+    is_smooth=True
     generator_model='models/v2_pretrain_epoch10.pth'
     discriminator_model=None
